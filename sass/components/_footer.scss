@@ -1,0 +1,168 @@
+.footer {
+    background: #2F303A;
+    display: flex;
+
+
+    &__container {
+        display: flex;
+    }
+
+    &__logo {
+        display: block;
+        padding: 60px 0px 9px 0px;
+        font-family: "Raleway";
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        color: $accent-color;
+    }
+}
+
+.footerAddress {
+    padding-bottom: 60px;
+    font-style: normal;
+
+
+    &__link {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #FFFFFF;
+        transition-duration: $duration;
+        transition-timing-function: $timing-function;
+        transition-property: color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        color: $accent-color;
+    }
+}
+
+.footerContact__link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-duration: $duration;
+    transition-timing-function: $timing-function;
+    transition-property: color;
+
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footerSocial {
+    margin-left: 70px;
+
+
+    &__title {
+        display: block;
+        padding: 75px 0px 20px 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1428571429;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+.footerIcons {
+    display: flex;
+    Width: 206px;
+    Height: 44px;
+
+
+    &__item:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__link {
+        Width: 44px;
+        Height: 44px;
+        color: $secondary-title-color;
+        background-color: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition-duration: $duration;
+        transition-timing-function: $timing-function;
+        transition-property: background-color;
+    }
+
+    &__link:hover,
+    &__link:focus {
+        background-color: $accent-color;
+    }
+
+    &__svg {
+        fill: currentColor;
+    }
+}
+
+.footerSubscribe {
+    margin-left: 70px;
+
+
+    &__title {
+        display: block;
+        padding: 75px 0px 20px 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.1428571429;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: $secondary-title-color;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        width: 342px;
+        height: 47px;
+        padding: 0px 0px 0px 16px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+        background: #2F303A;
+        outline: none;
+    }
+
+    &__buttonDiv {
+        display: inline-block;
+    }
+
+    &__sendButton {
+        display: flex;
+        align-items: center;
+        width: 200px;
+        height: 50px;
+        background: $accent-color;
+        color: $secondary-title-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        margin-left: 12px;
+        padding: 10px 28px 10px 48px;
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+        border: none;
+    }
+
+    &__sendSvg {
+        padding-left: 30px;
+    }
+}

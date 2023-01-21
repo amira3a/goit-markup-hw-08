@@ -1,0 +1,141 @@
+.cards {
+    padding-top: 50px;
+    padding-bottom: 68px;
+}
+
+.cards__list {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cards__item {
+    width: 370px;
+    height: 404px;
+    background: var(--secondary-title-color);
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+    transition-duration: var(--duration);
+    transition-timing-function: var(--timing-function);
+    transition-property: box-shadow;
+}
+
+.cards__item:hover,
+.cards__item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.cards__container {
+    position: relative;
+    overflow: hidden;
+}
+
+.cards__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms;
+    z-index: -1;
+}
+
+.cards__overlay>p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5555555556;
+    color: var(--secondary-title-color);
+    padding: 63px 24px 91px 24px;
+}
+
+.cards__item:hover .cards__overlay {
+    transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.cards {
+    padding-top: 50px;
+    padding-bottom: 68px;
+
+
+    &__list {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__item {
+        width: 370px;
+        height: 404px;
+        background: $secondary-title-color;
+        border: 1px solid #EEEEEE;
+        cursor: pointer;
+        transition-duration: $duration;
+        transition-timing-function: $timing-function;
+        transition-property: box-shadow;
+    }
+
+    &__item:hover,
+    &__item:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    &__container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 370px;
+        height: 294px;
+        background: rgba(33, 150, 243, 0.9);
+        transform: translateY(100%);
+        transition: transform 250ms;
+        z-index: -1;
+    }
+
+    &__overlay>p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.5555555556;
+        color: $secondary-title-color;
+        padding: 63px 24px 91px 24px;
+    }
+
+    &__item:hover .cards__overlay {
+        transform: translateY(0);
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 0;
+    }
+
+    &__title {
+        padding: 20px 24px 4px 24px;
+        margin: 0px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: $primary-text-color;
+    }
+}
+
+.card__text {
+    padding: 0px 24px 20px 24px;
+    margin: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #757575;
+}
