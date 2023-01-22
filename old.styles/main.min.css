@@ -882,7 +882,7 @@ button section*/
 
 
 
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) and (min-width: 320px) {
   .container {
     width: 450px;
 
@@ -1159,9 +1159,86 @@ button section*/
           margin-left: 0px;
           
         }
+
+
+                .headerCurrent__link::after {
+                  display: none;
+                }
+        
+                .headerNav__link {
+                  display: block;
+                  padding-top: 0px;
+                  padding-bottom: 32px;
+                  font-size: 40px;
+                  line-height: 47px;
+        
+                }
+        
+                .mobile-menu .link {
+                  position: relative;
+                  padding-left: 11px;
+                  padding-right: 10px;
+                  color: var(--accent-color);
+                  text-decoration: none;
+                }
+        
+                .link:after {
+                  position: absolute;
+                  content: "";
+                  width: 22px;
+                  height: 0px;
+                  border: 1px solid rgba(33, 33, 33, 0.2);
+                  ;
+                  transform: rotate(90deg);
+                  bottom: 10px;
+                }
+        
+                .link__list {
+                  display: flex;
+                }
+        
+                .link__list {
+                  margin-top: 33px;
+                  padding-left: 24px;
+                }
+        
+                .headerContacts__svg {
+                  display: none;
+                }
+        
+                .headerContacts__item {
+                  padding-bottom: 0px;
+        
+                }
+        
+                .headerContacts__item:not(:last-child) {
+                  padding-top: 270px;
+                }
+        
+                .headerContacts__link {
+                  padding-top: 0px;
+                  padding-bottom: 32px;
+                }
+        
+                .phone {
+                  font-weight: 500;
+                  font-size: 34px;
+                  line-height: 40px;
+                  letter-spacing: 0.02em;
+                  color: var(--accent-color);
+                }
+        
+                .mail {
+                  font-weight: 500;
+                  font-size: 24px;
+                  line-height: 28px;
+                  letter-spacing: 0.02em;
+                  color: var(--secondary-text-color);
+                }
       }
 
-@media screen and (max-width:768px) and (min-width:481px) {
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .container {
     width: 738px;
   }
@@ -1440,8 +1517,8 @@ button section*/
           margin-left: 0px;
     
         }
-        }
         
+      }       
 
 
 
@@ -1492,71 +1569,7 @@ button section*/
   list-style: none;
 }
 
+@media screen and (max-width: 480px) {
 
-@media screen and (min-width: 480px) and (max-width:482px) {
-.headerCurrent__link::after {
-  display: none;
-}
-.headerNav__link {
-  display: block;
-  padding-top: 0px;
-  padding-bottom: 32px;
-  font-size: 40px;
-  line-height: 47px;
-  
-}
-.mobile-menu .link {
-  position: relative;
-  padding-left: 11px;
-  padding-right: 10px;
-  color: var(--accent-color);
-  text-decoration: none;
-}
-
-.link:after {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 0px;
-  border: 1px solid rgba(33, 33, 33, 0.2); ;
-  transform: rotate(90deg);
-  bottom: 10px;
-}
-
-.link__list {
-  display: flex;
-}
-.link__list{
-  margin-top: 33px;
-  padding-left: 24px;
-}
-.headerContacts__svg{
-  display: none;
-}
-.headerContacts__item {
-  padding-bottom: 0px;
 
 }
-.headerContacts__item:not(:last-child){
-  padding-top: 270px;
-}
-.headerContacts__link{
-  padding-top: 0px;
-  padding-bottom: 32px;
-}
-.phone{
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 40px;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-.mail{
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  letter-spacing: 0.02em;
-  color: var(--secondary-text-color);
-}
-}
-
