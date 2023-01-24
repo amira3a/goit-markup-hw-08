@@ -1,8 +1,25 @@
 .container {
-    width: 1200px;
+    width: 100%;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+            
+                width: 450px;
+            
+        }
+    
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            
+                width: 738px;
+            
+        }
+    
+        @media screen and (min-width: 1200px)  {
+            
+                width: 1170px;
+        
+        }
 }
 img {
     display: block;

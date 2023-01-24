@@ -1,3 +1,5 @@
+@use '../utiles/colors';
+@use '../utiles/mixins';
 .hero {
     padding: 200px 0px;
     text-align: center;
@@ -6,12 +8,48 @@
     background-position: center;
     margin: 0 auto;
     background-size: cover;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    width: 360px;
+        height: 164px;
+        padding: 118px 60px 118px 60px;
+        text-align: center;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480x400.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        background-size: cover;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    width: 360px;
+        height: 164px;
+        padding: 118px 204px;
+        text-align: center;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero768x400.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0;
+        background-size: cover;
+}
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        width: 360px;
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            flex-direction: column;
+            align-items: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 360px;
+            display: block;
+            padding: 0px;
+            margin: 0px;
+            flex-direction: column;
+            align-items: center;
+    }
     }
 
     &__title {
@@ -21,9 +59,19 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: $secondary-title-color;
+        color: colors.$secondary-title-color;
         width: 696px;
         margin-bottom: 30px;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        font-size: 26px;
+            line-height: calc(42px / 26px);
+            width: 360px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        font-size: 26px;
+            line-height: calc(42px / 26px);
+            width: 360px;
+    }
     }
 }
 
@@ -33,14 +81,14 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
-    color: $secondary-title-color;
-    background-color: $accent-color;
+    color: colors.$secondary-title-color;
+    background-color: colors.$accent-color;
     border: none;
     padding: 10px 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+    transition-duration: mixins.$duration;
+    transition-timing-function: mixins.$timing-function;
     transition-property: color;
 
 

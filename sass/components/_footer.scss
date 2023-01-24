@@ -1,10 +1,24 @@
+@use '../utiles/colors';
+@use '../utiles/mixins';
 .footer {
     background: #2F303A;
     display: flex;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    padding-top: 60px;
+        padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    padding-top: 60px;
+        padding-bottom: 60px;
+}
     &__container {
         display: flex;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        flex-wrap: wrap;
+    }
     }
 
     &__logo {
@@ -14,28 +28,52 @@
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
-        color: $accent-color;
+        color: colors.$accent-color;
+    @media screen and (min-width: 480px) and (max-width:767px){
+            padding: 0px;
+            font-size: 24px;
+            line-height: 28px;
+            padding-left: 163px;
+            padding-bottom: 13px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        text-align: center;
+            padding: 0px;
+            font-size: 24px;
+            line-height: 28px;
+            padding-left: 71px;
+            padding-bottom: 12px;
+    }
     }
 }
 
 .footerAddress {
     padding-bottom: 60px;
     font-style: normal;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    padding-bottom: 48px;
+        font-style: normal;
+        text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    padding-left: 71px;
+        padding-bottom: 50px;
+        font-style: normal;
+        text-align: center;
+}
     &__link {
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
         color: #FFFFFF;
-        transition-duration: $duration;
-        transition-timing-function: $timing-function;
+        transition-duration: mixins.$duration;
+        transition-timing-function: mixins.$timing-function;
         transition-property: color;
     }
 
     &__link:hover,
     &__link:focus {
-        color: $accent-color;
+        color: colors.$accent-color;
     }
 }
 
@@ -45,21 +83,28 @@
     line-height: 1.7142857143;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+    transition-duration: mixins.$duration;
+    transition-timing-function: mixins.$timing-function;
     transition-property: color;
 
 
     &:hover,
     &:focus {
-        color: $accent-color;
+        color: colors.$accent-color;
     }
 }
 
 .footerSocial {
     margin-left: 70px;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    margin-left: 0px;
+    text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-left: 0px;
+        height: 44px;
+        text-align: center;
+}
     &__title {
         display: block;
         padding: 75px 0px 20px 0px;
@@ -69,6 +114,15 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        padding-top: 0px;
+            padding-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        padding-top: 0px;
+            padding-bottom: 20px;
+            padding-left: 165px;
+    }
     }
 }
 
@@ -76,8 +130,22 @@
     display: flex;
     Width: 206px;
     Height: 44px;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    padding-left: 122px;
+        align-items: center;
+        display: flex;
+        Width: 206px;
+        Height: 44px;
+        padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    padding-left: 165px;
+        align-items: center;
+        display: flex;
+        Width: 206px;
+        Height: 44px;
+        padding-bottom: 60px;
+}
     &__item:not(:last-child) {
         margin-right: 10px;
     }
@@ -85,20 +153,20 @@
     &__link {
         Width: 44px;
         Height: 44px;
-        color: $secondary-title-color;
+        color: colors.$secondary-title-color;
         background-color: rgba(255, 255, 255, 0.1);
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        transition-duration: $duration;
-        transition-timing-function: $timing-function;
+        transition-duration: mixins.$duration;
+        transition-timing-function: mixins.$timing-function;
         transition-property: background-color;
     }
 
     &__link:hover,
     &__link:focus {
-        background-color: $accent-color;
+        background-color: colors.$accent-color;
     }
 
     &__svg {
@@ -108,8 +176,17 @@
 
 .footerSubscribe {
     margin-left: 70px;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    margin-left: 0px;
+        text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    margin-left: 0px;
+        text-align: center;
+        flex-direction: column;
+        width: 450px;
+        padding-left: 151px;
+}
     &__title {
         display: block;
         padding: 75px 0px 20px 0px;
@@ -118,7 +195,29 @@
         line-height: 1.1428571429;
         letter-spacing: 0.03em;
         text-transform: uppercase;
-        color: $secondary-title-color;
+        color: colors.$secondary-title-color;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        display: block;
+            padding-top: 0px;
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428571429;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: block;
+            padding-top: 0px;
+            padding-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.1428571429;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+    }
     }
 
     &__input {
@@ -136,6 +235,18 @@
         color: rgba(255, 255, 255, 0.6);
         background: #2F303A;
         outline: none;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        width: 450px;
+            height: 50px;
+            padding: 0px 0px 0px 16px;
+            margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 450px;
+            height: 50px;
+            padding: 0px 0px 0px 16px;
+            margin-bottom: 20px;
+    }
     }
 
     &__buttonDiv {
@@ -147,8 +258,8 @@
         align-items: center;
         width: 200px;
         height: 50px;
-        background: $accent-color;
-        color: $secondary-title-color;
+        background: colors.$accent-color;
+        color: colors.$secondary-title-color;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         margin-left: 12px;
@@ -160,6 +271,12 @@
         line-height: 30px;
         letter-spacing: 0.06em;
         border: none;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        margin-left: 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-left: 0px;
+    }
     }
 
     &__sendSvg {

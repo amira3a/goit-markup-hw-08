@@ -1,3 +1,5 @@
+@use '../utiles/colors';
+@use '../utiles/mixins';
 .header {
     border-bottom: 1px solid #ECECEC;
 
@@ -5,21 +7,50 @@
     &__container {
         display: flex;
         align-items: center;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+                height: 60px;
     }
-
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+            height: 80px;
+            padding: 0px;
+    }
+    }
     &__logo {
         font-family: "Raleway";
         font-weight: 700;
         font-size: 26px;
         line-height: 31px;
-        color: $accent-color;
+        color: colors.$accent-color;
         margin-right: 97px;
+    @media screen and (min-width: 480px) and (max-width:767px) {
+    
+                width: 134px;
+                height: 28px;
+                font-size: 24px;
+                line-height: calc(28px / 24px);
+                margin: 16px 0px;
+                letter-spacing: 0.03em;
+                font-style: normal;
+    } 
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 134px;
+            height: 28px;
+            font-size: 24px;
+            line-height: calc(28px / 24px);
+            margin: 26px 88px 26px 0px;
+            letter-spacing: 0.03em;
+            font-style: normal;
     }
 }
 
 .headerNav__list {
     display: flex;
 
+@media screen and (min-width: 480px) and (max-width:767px) {
+
+        display: none;
+    
+}
 }
 
 .headerNav__item:not(:last-child) {
@@ -33,20 +64,26 @@
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.02em;
-    color: $primary-text-color;
+    color: colors.$primary-text-color;
     transition-property: color;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
-
+    transition-duration: mixins.$duration;
+    transition-timing-function: mixins.$timing-function;
+@media screen and (min-width: 480px) and (max-width:767px) {
+        padding-top: 0px;
+        padding-bottom: 32px;
+        font-size: 40px;
+        line-height: 47px;
+    }
 
     &:focus {
-        color: $accent-color;
+        color: colors.$accent-color;
     }
+  
 }
 
 .headerCurrent__link {
     position: relative;
-    color: $accent-color;
+    color: colors.$accent-color;
 
 
     &::after {
@@ -54,28 +91,45 @@
         content: "";
         width: 48px;
         height: 4px;
-        background: $accent-color;
+        background: colors.$accent-color;
         border-radius: 2px;
         top: 76px;
         left: 0px;
+        @media screen and (min-width: 480px) and (max-width: 767px){
+            display: none;
+        }
     }
 }
 
 .headerContacts {
     display: flex;
     margin-left: auto;
-
-
+@media screen and (min-width: 480px) and (max-width:767px) {
+        
+            visibility: hidden;
+        }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    display: block;
+        margin-left: auto;
+        padding: 0px;
+        margin-left: 93px;
+}
     &__item:not(:last-child) {
         margin-right: 50px;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        padding-bottom: 10px;
+    }
     }
 
     &__svg {
         margin-right: 10px;
         fill: currentColor;
+@media screen and (min-width: 480px) and (max-width:767px){
+        display: none;
     }
-}
 
+}
+}
 .headerContacts__link {
     display: flex;
     align-items: center;
@@ -83,16 +137,49 @@
     font-size: 14px;
     line-height: 1.1428571429;
     letter-spacing: 0.03em;
-    color: $secondary-text-color;
-    transition-duration: $duration;
-    transition-timing-function: $timing-function;
+    color: colors.$secondary-text-color;
+    transition-duration: mixins.$duration;
+    transition-timing-function: mixins.$timing-function;
     transition-property: color;
-
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    padding: 0px;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+}
 
     &:hover,
     &:focus {
-        color: $accent-color;
+        color: colors.$accent-color;
     }
 
 
 }
+.menu-toggle {
+    display: none;
+    border: none;
+    fill: transparent;
+    background-color: transparent;
+    margin: 10px 0px 10px 276px;
+@media screen and (min-width:480px) and (max-width:767px) {
+        display: flex;
+    }
+    
+&:hover,
+&:focus {
+            transition-duration: mixins.$duration;
+            transition-timing-function: mixins.$timing-function;
+            fill: #2196F3;
+            cursor: pointer;
+}    
+
+}
+  /*@media screen and (min-width: 481px) {
+      .menu-toggle {
+          display: none;
+
+      }
+  }*/
+}
+
+
+

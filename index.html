@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
-    <link href="./old.styles/main.min.css" rel="stylesheet">
+    <link href="./css/main.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -500,7 +500,7 @@
 
     <!--mobile-menu-->
     <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
+        <button class="menu-close js-close-menu">
             <svg fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
                 <path fill-rule="evenodd"
                     d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -508,27 +508,27 @@
             </svg>
         </button>
     
-        <ul class="mobile-menu" >
-            <li class="headerNav__item"><a class="headerNav__link headerCurrent__link " href="./index.html">Studio</a></li>
-            <li class="headerNav__item"><a class="headerNav__link" href="./portfolio.html">Portfolio</a></li>
-            <li class="headerNav__item"><a class="headerNav__link" href="#">Contacts</a></li>
+        <ul class="mobile-nav" >
+            <li class="mobileNav__item"><a class="nav-link nav-link1" href="./index.html">Studio</a></li>
+            <li class="mobileNav__item"><a class="nav-link" href="./portfolio.html">Portfolio</a></li>
+            <li class="mobileNav__item"><a class="nav-link" href="#">Contacts</a></li>
         </ul  >
-        <ul class="mobile-menu" >
+        <ul class="mobile-con" >
             
-            <li class="headerContacts__item"><a class="headerContacts__link phone" href="tel:+380961111111">
+            <li class="mobileContacts__item"><a class=" phone" href="tel:+380961111111">
                     <svg class="headerContacts__svg" width="10" height="16">
                         <use href="./images/contacts.svg#icon-smartphone">
                         </use>
                     </svg>
                     +38 096 111 11 11</a></li>
-            <li class="headerContacts__item"><a class="headerContacts__link mail" href="mailto:info@devstudio.com">
+            <li class="mobileContacts__item"><a class=" mail" href="mailto:info@devstudio.com">
                     <svg class="headerContacts__svg" width="16" height="12">
                         <use href="./images/contacts.svg#icon-envelope">
                         </use>
                     </svg>
                     info@devstudio.com</a></li>
         </ul>
-        <ul class="mobile-menu link__list" >
+        <ul class="mobile-link link__list" >
             <li><a class="link">Instagram</a> </li>
             <li><a class="link">Twitter</a> </li>
             <li><a class="link">Facebook</a> </li>

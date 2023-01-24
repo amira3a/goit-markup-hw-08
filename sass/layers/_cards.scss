@@ -1,3 +1,5 @@
+@use '../utiles/colors';
+@use '../utiles/mixins';
 .cards {
     padding-top: 50px;
     padding-bottom: 68px;
@@ -14,11 +16,11 @@
 .cards__item {
     width: 370px;
     height: 404px;
-    background: var(--secondary-title-color);
+    background: colors.$secondary-title-color;
     border: 1px solid #EEEEEE;
     cursor: pointer;
-    transition-duration: var(--duration);
-    transition-timing-function: var(--timing-function);
+    transition-duration: mixins.$duration;
+    transition-timing-function: mixins.$timing-function;
     transition-property: box-shadow;
 }
 
@@ -48,7 +50,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 1.5555555556;
-    color: var(--secondary-title-color);
+    color: colors.$secondary-title-color;
     padding: 63px 24px 91px 24px;
 }
 
@@ -75,11 +77,11 @@
     &__item {
         width: 370px;
         height: 404px;
-        background: $secondary-title-color;
+        background: colors.$secondary-title-color;
         border: 1px solid #EEEEEE;
         cursor: pointer;
-        transition-duration: $duration;
-        transition-timing-function: $timing-function;
+        transition-duration: mixins.$duration;
+        transition-timing-function: mixins.$timing-function;
         transition-property: box-shadow;
     }
 
@@ -109,7 +111,7 @@
         font-weight: 400;
         font-size: 18px;
         line-height: 1.5555555556;
-        color: $secondary-title-color;
+        color: colors.$secondary-title-color;
         padding: 63px 24px 91px 24px;
     }
 
@@ -127,7 +129,7 @@
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        color: $primary-text-color;
+        color: colors.$primary-text-color;
     }
 }
 

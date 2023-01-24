@@ -1,43 +1,86 @@
+@use '../utiles/colors';
+@use '../utiles/mixins';
 .customer {
     padding-top: 94px;
     padding-bottom: 94px;
-
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    padding-top: 60px;
+        padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    padding-top: 60px;
+        padding-bottom: 60px;
+}
     &__container {
         Height: 184px;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        height: 399px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 738px;
+            height: 277px;
+    }
     }
 
     &__list {
         display: flex;
         margin: 0 auto;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        margin: 0px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin: 0px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
     }
 
     &__item:not(:last-child) {
         margin-right: 30px;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        margin-right: 0px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        margin-right: 0px;
+    }
     }
 
     &__link {
         width: 170px;
         height: 92px;
         color: #AFB1B8;
-        background-color: $secondary-title-color;
+        background-color: colors.$secondary-title-color;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid #AFB1B8;
         border-radius: 4px;
+    @media screen and (min-width: 480px) and (max-width:767px){
+        width: 208px;
+            height: 90px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        width: 224px;
+            height: 90px;
+    }
     }
 
     &__link:hover,
     &__link:focus {
-        color: $accent-color;
-        border-color: $accent-color;
+        color: colors.$accent-color;
+        border-color: colors.$accent-color;
     }
 
     &__svg {
         fill: currentColor;
-        transition-duration: $duration;
-        transition-timing-function: $timing-function;
+        transition-duration: mixins.$duration;
+        transition-timing-function: mixins.$timing-function;
         transition-property: color, border-color;
     }
 }

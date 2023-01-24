@@ -1,7 +1,13 @@
+@use '../utiles/colors';
 .do {
     padding-top: 0;
 
-
+@media screen and (min-width: 480px) and (max-width:767px){
+    display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    display: none;
+}
     &__list {
         display: flex;
         justify-content: center;
@@ -17,7 +23,7 @@
         line-height: 1.1428571429;
         text-align: center;
         text-transform: uppercase;
-        color: $secondary-title-color;
+        color: colors.$secondary-title-color;
         padding-top: 27px;
         padding-bottom: 27px;
     }

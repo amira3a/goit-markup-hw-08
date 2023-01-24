@@ -1,0 +1,122 @@
+@use '../utiles/colors';
+.menu-container {
+    display: none;
+}
+@media screen and (min-width:480px) and (max-width:767px){
+.menu-container{
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    padding: 0px;
+    background-color: colors.$secondary-title-color;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+.menu-container.is-open{
+
+display: block;
+    transform: translateX(0);
+
+}
+
+.menu-close {
+border: none;
+background-color: transparent;
+    height: 40px;
+    padding: 10px 17px 0px 426px;
+    color: #212121;
+    margin: 0px;
+
+}  
+.menu-close:hover {
+
+    fill: colors.$accent-color;
+
+}
+}
+
+
+
+
+
+
+.mobile-nav {
+    padding-left: 40px;
+    padding-bottom: 238px;
+    margin: 0;
+    list-style: none;
+}
+.mobile-con{
+    padding-left: 40px;
+    padding-bottom: 60px;
+}
+.mobileNav__item {
+            font-weight: 500;
+            line-height: 47px;
+            letter-spacing: 0.02em;
+            font-size: 40px;
+            padding-top: 0px;
+            padding-bottom: 32px;   
+    }
+.nav-link{
+    color:#212121;
+}
+.nav-link1{
+    color:#2196F3;
+}
+.mobile-con svg{
+    display: none;
+}
+
+.link {
+    position: relative;
+    padding-left: 11px;
+    padding-right: 10px;
+    color: colors.$accent-color;
+    text-decoration: none;
+}
+
+.link:after {
+    position: absolute;
+    content: "";
+    width: 22px;
+    height: 0px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    
+    transform: rotate(90deg);
+    bottom: 10px;
+}
+
+.link__list {
+    display: flex;
+}
+
+.link__list {
+    margin-top: 0px;
+    margin-bottom: 47px;
+    padding-left: 24px;
+}
+
+
+
+.phone {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: colors.$accent-color;
+}
+
+.mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: colors.$secondary-text-color;
+}
+.mobileContacts__item{
+    padding-top: 32px;
+}

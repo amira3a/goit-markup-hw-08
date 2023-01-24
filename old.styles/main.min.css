@@ -1551,7 +1551,7 @@ button section*/
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-container.menu-toggle {
   width: 40px;
   height: 40px;
   padding: 10px 2px 0px 423px;
