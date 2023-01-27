@@ -2,12 +2,12 @@
 .menu-container {
     display: none;
 }
-@media screen and (min-width:480px) and (max-width:767px){
+@media screen and  (max-width:767px){
 .menu-container{
 position: fixed;
     top: 0;
     left: 0;
-    width: 480px;
+    width: 100%;
     height: 796px;
     padding: 0px;
     background-color: colors.$secondary-title-color;
@@ -23,12 +23,13 @@ display: block;
 }
 
 .menu-close {
+    
 border: none;
 background-color: transparent;
     height: 40px;
-    padding: 10px 17px 0px 426px;
+    margin: 10px 17px 10px 426px;
     color: #212121;
-    margin: 0px;
+    
 
 }  
 .menu-close:hover {

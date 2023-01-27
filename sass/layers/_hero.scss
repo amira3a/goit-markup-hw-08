@@ -1,57 +1,20 @@
 @use '../utiles/colors';
 @use '../utiles/mixins';
+
 .hero {
     padding: 200px 0px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
     background-size: cover;
-@media screen and (min-width: 480px) and (max-width:767px){
-    width: 360px;
-        height: 164px;
-        padding: 118px 60px 118px 60px;
-        text-align: center;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-480x400.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0;
-        background-size: cover;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    width: 360px;
-        height: 164px;
-        padding: 118px 204px;
-        text-align: center;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero768x400.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        margin: 0;
-        background-size: cover;
-}
+
     &__container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        width: 360px;
-            display: block;
-            padding: 0px;
-            margin: 0px;
-            flex-direction: column;
-            align-items: center;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        width: 360px;
-            display: block;
-            padding: 0px;
-            margin: 0px;
-            flex-direction: column;
-            align-items: center;
-    }
-    }
-
     &__title {
         font-weight: 900;
         font-size: 44px;
@@ -62,19 +25,9 @@
         color: colors.$secondary-title-color;
         width: 696px;
         margin-bottom: 30px;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        font-size: 26px;
-            line-height: calc(42px / 26px);
-            width: 360px;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        font-size: 26px;
-            line-height: calc(42px / 26px);
-            width: 360px;
-    }
-    }
-}
 
+}
 .heroButton {
     position: relative;
     font-family: "Roboto";
@@ -97,4 +50,45 @@
         color: #4a5964;
         cursor: pointer;
     }
+}
+
+
+@media screen and  (max-width: 767px) {
+.hero{
+    
+    height: 164px;
+    padding: 118px 0px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+    
+
+&__container{
+    margin: 0 auto;
+    width: 100%;
+    padding: 0px;
+}
+&__title {
+    font-size: 26px;
+    line-height: calc(42px / 26px);
+    width: 360px;
+}
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.hero{
+    
+    height: 164px;
+    padding: 118px 204px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+
+&__container {
+        margin: 0 auto;
+        width: 100%;
+        padding: 0px;
+    }
+ &__title {
+    font-size: 26px;
+    line-height: calc(42px / 26px);
+    width: 360px;    
+ }
+}
 }

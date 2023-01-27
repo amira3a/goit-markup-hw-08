@@ -3,22 +3,12 @@
 .footer {
     background: #2F303A;
     display: flex;
-@media screen and (min-width: 480px) and (max-width:767px){
-    padding-top: 60px;
-        padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    padding-top: 60px;
-        padding-bottom: 60px;
-}
+
+
     &__container {
         display: flex;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        flex-direction: column;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        flex-wrap: wrap;
-    }
+    
+    
     }
 
     &__logo {
@@ -29,38 +19,16 @@
         font-size: 26px;
         line-height: 31px;
         color: colors.$accent-color;
-    @media screen and (min-width: 480px) and (max-width:767px){
-            padding: 0px;
-            font-size: 24px;
-            line-height: 28px;
-            padding-left: 163px;
-            padding-bottom: 13px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        text-align: center;
-            padding: 0px;
-            font-size: 24px;
-            line-height: 28px;
-            padding-left: 71px;
-            padding-bottom: 12px;
-    }
+    
+    
     }
 }
 
 .footerAddress {
     padding-bottom: 60px;
     font-style: normal;
-@media screen and (min-width: 480px) and (max-width:767px){
-    padding-bottom: 48px;
-        font-style: normal;
-        text-align: center;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    padding-left: 71px;
-        padding-bottom: 50px;
-        font-style: normal;
-        text-align: center;
-}
+
+
     &__link {
         font-weight: 400;
         font-size: 14px;
@@ -96,15 +64,8 @@
 
 .footerSocial {
     margin-left: 70px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    margin-left: 0px;
-    text-align: center;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    margin-left: 0px;
-        height: 44px;
-        text-align: center;
-}
+
+
     &__title {
         display: block;
         padding: 75px 0px 20px 0px;
@@ -114,15 +75,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #FFFFFF;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        padding-top: 0px;
-            padding-bottom: 20px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        padding-top: 0px;
-            padding-bottom: 20px;
-            padding-left: 165px;
-    }
+    
+    
     }
 }
 
@@ -130,22 +84,8 @@
     display: flex;
     Width: 206px;
     Height: 44px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    padding-left: 122px;
-        align-items: center;
-        display: flex;
-        Width: 206px;
-        Height: 44px;
-        padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    padding-left: 165px;
-        align-items: center;
-        display: flex;
-        Width: 206px;
-        Height: 44px;
-        padding-bottom: 60px;
-}
+
+
     &__item:not(:last-child) {
         margin-right: 10px;
     }
@@ -176,17 +116,8 @@
 
 .footerSubscribe {
     margin-left: 70px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    margin-left: 0px;
-        text-align: center;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    margin-left: 0px;
-        text-align: center;
-        flex-direction: column;
-        width: 450px;
-        padding-left: 151px;
-}
+
+
     &__title {
         display: block;
         padding: 75px 0px 20px 0px;
@@ -196,28 +127,8 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: colors.$secondary-title-color;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        display: block;
-            padding-top: 0px;
-            padding-bottom: 20px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.1428571429;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        display: block;
-            padding-top: 0px;
-            padding-bottom: 20px;
-            font-weight: 700;
-            font-size: 14px;
-            line-height: 1.1428571429;
-            letter-spacing: 0.03em;
-            text-transform: uppercase;
-            color: #FFFFFF;
-    }
+    
+    
     }
 
     &__input {
@@ -235,18 +146,8 @@
         color: rgba(255, 255, 255, 0.6);
         background: #2F303A;
         outline: none;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        width: 450px;
-            height: 50px;
-            padding: 0px 0px 0px 16px;
-            margin-bottom: 20px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        width: 450px;
-            height: 50px;
-            padding: 0px 0px 0px 16px;
-            margin-bottom: 20px;
-    }
+    
+    
     }
 
     &__buttonDiv {
@@ -271,15 +172,166 @@
         line-height: 30px;
         letter-spacing: 0.06em;
         border: none;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        margin-left: 0px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-left: 0px;
-    }
+    
+    
     }
 
     &__sendSvg {
         padding-left: 30px;
+    }
+}
+@media screen and (max-width: 767px){
+.footer{
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    
+&__container{
+    
+            flex-direction: column;
+        
+}
+&__logo{
+padding: 0px;
+    font-size: 24px;
+    line-height: 28px;
+
+    text-align: center;
+}
+}
+.footerAddress{
+padding-bottom: 48px;
+    font-style: normal;
+    text-align: center;
+}
+.footerSocial{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+        text-align: center;
+        justify-content: center;
+            align-items: center;
+&__title{
+    
+padding-top: 0px;
+    padding-bottom: 20px;
+}
+}
+.footerIcons{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    Width: 206px;
+    Height: 44px;
+    padding-bottom: 60px
+}
+.footerSubscribe{
+margin-left: 0px;
+    text-align: center;
+&__title{
+display: block;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1428571429;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+ &__input{
+width: 100%;
+    height: 50px;
+    padding: 0px 0px 0px 16px;
+    margin-bottom: 20px;
+ }
+ &__sendButton{
+margin-left: 0px;
+ }
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.footer {
+        padding-top: 60px;
+            padding-bottom: 60px;
+
+        &__container {
+
+            flex-wrap: wrap;
+
+        }
+
+        &__logo {
+            text-align: center;
+                padding: 0px;
+                font-size: 24px;
+                line-height: 28px;
+                padding-left: 71px;
+                padding-bottom: 12px;
+        }
+    }
+
+    .footerAddress {
+        padding-left: 71px;
+            padding-bottom: 50px;
+            font-style: normal;
+            text-align: center;
+    }
+
+    .footerSocial {
+        justify-items: center;
+            align-items: center;
+        display: flex;
+        flex-direction: column;
+        
+            height: 44px;
+            text-align: center;
+
+        &__title {
+            padding-top: 0px;
+                padding-bottom: 20px;
+                padding-left: 0px;
+        }
+    }
+
+    .footerIcons {
+
+        justify-items: center;
+            align-items: center;
+            display: flex;
+            Width: 206px;
+            Height: 44px;
+            padding-bottom: 60px;
+    }
+
+    .footerSubscribe {
+        margin-left: 0px;
+            text-align: center;
+            flex-direction: column;
+            width: 450px;
+            padding-left: 151px;
+        &__title {
+            display: block;
+                padding-top: 0px;
+                padding-bottom: 20px;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.1428571429;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+        }
+
+        &__input {
+            width: 100%;
+                height: 50px;
+                padding: 0px 0px 0px 16px;
+                margin-bottom: 20px;
+        }
+
+        &__sendButton {
+            margin-left: 0px;
+        }
     }
 }

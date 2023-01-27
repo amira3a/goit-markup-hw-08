@@ -1,29 +1,13 @@
 @use '../utiles/colors';
+
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    padding-top: 60px;
-        padding-bottom: 60px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    padding-top: 60px;
-        padding-bottom: 60px;
-}
+
     &__list {
         display: flex;
         justify-content: center;
-    @media screen and (min-width: 480px) and (max-width:767px){
-    justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 30px;
-    }
+    
     }
 
     &__title {
@@ -61,49 +45,120 @@
 
 .features__item {
     width: 270px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    width: 450px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    width: 354px;
-}
-    &:not(:last-child) {
-    margin-right: 45px;
-    @media screen and (min-width: 480px) and (max-width:767px){
-    margin-right: 0px;
-    margin-bottom: 30px;
-    }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-right: 0px;
-            margin-bottom: 0px;
-        }
+
+&:not(:last-child) {
+        margin-right: 45px;
+    
     }
 }
 
 .featuresIconItem {
     padding: 25px 100px;
+    
     background-color: #F5F4FA;
     border-radius: 4px;
     margin-bottom: 30px;
-@media screen and (min-width: 480px) and (max-width:767px){
-    padding: 25px 190px;
-        background-color: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px){
-    padding: 25px 142px;
-        background-color: #F5F4FA;
-        border-radius: 4px;
-        margin-bottom: 30px;
-}
-    &:not(:last-child) {
+
+&:not(:last-child) {
         margin-right: 30px;
-    @media screen and (min-width: 480px) and (max-width:767px){
-        margin-right: 0px;
+}
+}
+
+
+
+@media screen and  (max-width: 767px){
+.features {
+        width: auto;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        
+
+        &__list {
+            width: auto;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            
+        }
+        
+
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        margin-right: 0px;
+
+    
+
+    .features__item {
+        
+            width: 100%;
+        
+        align-items: center;
+
+        &:not(:last-child) {
+            
+                margin-right: 0px;
+                margin-bottom: 30px;
+            
+        }
     }
+
+    .featuresIconItem {
+        padding: 5.2vw 39.75vw;
+        &:not(:last-child) {
+            
+                margin-right: 0px;
+            
+        }
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+.features {
+        
+align-items: center;
+        justify-content: center;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        
+
+        &__list {
+            
+                justify-content: center;
+                
+                flex-wrap: wrap;
+                gap: 30px;
+            }
+}
+
+        
+
+        
+    
+
+    
+
+    .features__item {
+        
+            width: 354px;
+        
+
+        &:not(:last-child) {
+            
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+        }
+    
+
+    .featuresIconItem {
+        
+            padding: 25px 142px;
+            background-color: #F5F4FA;
+            border-radius: 4px;
+            margin-bottom: 30px;
+        
+
+        &:not(:last-child) {
+            
+                margin-right: 0px;
+            }
+        }
 }
