@@ -87,9 +87,38 @@ display: flex;
     fill: currentColor;
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px){
+.team {
+
+        padding-top: 60px;
+        padding-bottom: 60px;
 
 
-@media screen and  (max-width: 767px){
+        &__list {
+
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+
+
+    }
+
+    .team__item {
+
+
+        &:not(:last-child) {
+
+            margin-right: 0px;
+            margin-bottom: 30px;
+
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
 .team {
         
             padding-top: 60px;

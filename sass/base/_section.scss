@@ -12,7 +12,10 @@
     letter-spacing: 0.03em;
     color: colors.$primary-text-color;
     margin-bottom: 50px;
-@media screen and  (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 479px){
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
     margin-bottom: 30px;
 }
 }

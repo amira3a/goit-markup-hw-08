@@ -4,6 +4,7 @@
     border-bottom: 1px solid #ECECEC;
 
     &__container {
+        width: 1200px;
         display: flex;
         align-items: center;
     }
@@ -64,7 +65,7 @@
 
 .headerContacts {
     display: flex;
-    margin-left: auto;
+    margin-left: 314px;
 
     &__item:not(:last-child) {
         margin-right: 50px;
@@ -121,8 +122,73 @@
 
       }
   }*/
+@media screen and (min-width: 320px) and (max-width: 479px){
+.header {
 
-@media screen and  (max-width: 767px){
+        &__container {
+            width: auto;
+            height: 60px;
+        }
+
+
+        &__logo {
+
+
+            width: 134px;
+            height: 28px;
+            font-size: 24px;
+            line-height: calc(28px / 24px);
+            margin: 16px 0px;
+            letter-spacing: 0.03em;
+            font-style: normal;
+        }
+
+    }
+
+    .headerNav__list {
+
+        display: none;
+
+    }
+
+
+
+
+    .headerNav__link {
+        display: none;
+        padding-top: 0px;
+        padding-bottom: 32px;
+        font-size: 40px;
+        line-height: 47px;
+    }
+
+
+
+    .headerCurrent__link::after {
+
+        display: none;
+    }
+
+
+
+    .headerContacts {
+
+        display: none;
+
+
+        &__svg {
+            display: none;
+
+        }
+
+    }
+
+    .menu-toggle {
+
+        display: flex;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 767px){
 .header {  
 
         &__container {
@@ -193,8 +259,16 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px){
 .header {
-                height: 80px;
-                padding: 0px;
+    
+    &__container {
+        width:738px;
+        display: flex;
+            align-items: center;
+            
+            
+            
+        }
+                
             
 
         &__logo {
@@ -214,21 +288,26 @@
 
 
         .headerContacts {
-            
-                display: block;
-                margin-left: auto;
+            width: 138px;
+                display: flex;
+                flex-direction: column;
+                margin-right: 0px;
                 padding: 0px;
                 margin-left: 93px;
             
-
+            &__item{
+                width: 138px;
+            }
             &__item:not(:last-child) {
+                
+                    margin-right: 0px;
                 
                     padding-bottom: 10px;
                 }
         }
 
         .headerContacts__link {
-            
+            width:138px;
                 padding: 0px;
                 font-size: 12px;
                 letter-spacing: 0.02em;

@@ -4,7 +4,7 @@
 .hero {
     padding: 200px 0px;
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -52,13 +52,34 @@
     }
 }
 
+@media screen and (min-width: 320px) and (max-width: 479px){
+.hero {
 
-@media screen and  (max-width: 767px) {
+        height: 164px;
+        padding: 118px 0px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
+
+
+        &__container {
+            margin: 0 auto;
+            width: 100%;
+            padding: 0px;
+        }
+
+        &__title {
+            font-size: 26px;
+            line-height: calc(42px / 26px);
+            width: auto;
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
 .hero{
     
     height: 164px;
     padding: 118px 0px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     
 
 &__container{
@@ -78,7 +99,7 @@
     
     height: 164px;
     padding: 118px 204px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/hero.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
 
 &__container {
         margin: 0 auto;
