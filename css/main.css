@@ -1216,22 +1216,16 @@ img {
     height: 100%;
   }
   .customer__list {
-    width: auto;
     margin: 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .customer__item {
-    width: 100%;
-  }
   .customer__item:not(:last-child) {
-    width: 100%;
     margin-right: 0px;
   }
   .customer__link {
-    width: auto;
     height: 90px;
   }
   .customer__svg {
@@ -1249,22 +1243,16 @@ img {
     height: 100%;
   }
   .customer__list {
-    width: auto;
     margin: 0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
   }
-  .customer__item {
-    width: 100%;
-  }
   .customer__item:not(:last-child) {
-    width: 100%;
     margin-right: 0px;
   }
   .customer__link {
-    width: auto;
     height: 90px;
   }
   .customer__svg {
@@ -1394,7 +1382,6 @@ img {
 
 @media screen and (min-width: 320px) and (max-width: 479px) {
   .features {
-    width: auto;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -1402,19 +1389,13 @@ img {
     width: 290px;
   }
   .features__list {
-    width: auto;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-  }
-  .features__item {
-    width: auto;
   }
   .features__item:not(:last-child) {
     margin-right: 0px;
     margin-bottom: 30px;
-  }
-  .featuresIconItem {
-    padding: 8.6% 34.8%;
   }
   .featuresIconItem:not(:last-child) {
     margin-right: 0px;

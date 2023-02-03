@@ -62,7 +62,7 @@
         }
 
         &__list {
-            width: auto;
+            
             margin: 0px;
             display: flex;
             justify-content: center;
@@ -71,19 +71,16 @@
 
         }
 
-        &__item {
-            width: 100%;
-        }
-
+        
         &__item:not(:last-child) {
-            width: 100%;
+            
             margin-right: 0px;
 
         }
 
         &__link {
-
-            width: auto;
+            
+           
             height: 90px;
 
         }
@@ -107,7 +104,7 @@
         }
 
         &__list {
-            width: auto;
+            
                 margin: 0px;
                 display: flex;
                 justify-content: center;
@@ -115,18 +112,16 @@
                 gap: 30px;
             
         }
-        &__item{
-            width: 100%;
-        }
+       
         &__item:not(:last-child) {
-            width: 100%;
+            
                 margin-right: 0px;
             
         }
 
         &__link {
-            
-                width: auto;
+                
+                
                 height: 90px;
             
         }
