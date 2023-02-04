@@ -46,7 +46,7 @@
 }
 
 .features__item {
-    width: 270px;
+    width: 80%;
 
 &:not(:last-child) {
         margin-right: 30px;
@@ -55,7 +55,7 @@
 }
 
 .featuresIconItem {
-    padding: 25px 100px;
+    padding: 9.3% 37.05%;
     
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -70,10 +70,10 @@
             padding-top: 60px;
             padding-bottom: 60px;
             &__container {
-                    width: 290px;
+                    width: 90.65%;
                 }
             &__list {
-                
+            
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
@@ -87,7 +87,7 @@
     
         .features__item {
     
-            
+        
             
             &:not(:last-child) {
     
@@ -98,7 +98,7 @@
         }
     
         .featuresIconItem {
-           
+        
             &:not(:last-child) {
     
                 margin-right: 0px;
@@ -109,15 +109,15 @@
 
 @media screen and (min-width: 480px) and (max-width: 767px){
 .features {
-        width: auto;
+        
             padding-top: 60px;
             padding-bottom: 60px;
         
         &__container {
-                width: 450px;
+                width: 93.75%;
             }
         &__list {
-            width: auto;
+            
                 
                 flex-direction: column;
                 align-items: center;
@@ -131,7 +131,7 @@
 
     .features__item {
         
-            width: auto;
+            
         
         
         &:not(:last-child) {
