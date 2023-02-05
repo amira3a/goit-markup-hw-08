@@ -1222,11 +1222,7 @@ img {
     gap: 30px;
   }
   .customer__item {
-    width: 157.7%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    width: 44.8%;
   }
   .customer__item:not(:last-child) {
     margin-right: 0px;
@@ -1246,7 +1242,7 @@ img {
   }
   .customer__container {
     width: 93.75%;
-    height: 100%;
+    height: 399px;
   }
   .customer__list {
     margin: 0px;
@@ -1255,10 +1251,14 @@ img {
     flex-wrap: wrap;
     gap: 30px;
   }
+  .customer__item {
+    width: 46.65%;
+  }
   .customer__item:not(:last-child) {
     margin-right: 0px;
   }
   .customer__link {
+    width: 100%;
     height: 90px;
   }
   .customer__svg {
